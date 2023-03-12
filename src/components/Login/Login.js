@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Logo from '../../assets/img/logo.png';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -55,7 +56,7 @@ const Login = () => {
       <div className="sm:mx-auto xs:w-full sm:w-full sm:max-w-md">
         <form
           onSubmit={handleSubmit}
-          className="p-5 mt-10 bg-white rounded flex flex-col shadow-md sm:w-full sm:mx-auto"
+          className="p-5 px-10 mt-10 bg-white rounded flex flex-col shadow-md sm:w-full sm:mx-auto"
         >
           <div className="lg:mb-5 md:lg-3">
             <label
